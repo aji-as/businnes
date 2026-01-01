@@ -1,0 +1,31 @@
+# Robots.txt for GIESTAR Website
+# https://giestar.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://giestar.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /

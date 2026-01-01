@@ -1,0 +1,142 @@
+/**
+ * SEO Helper - Include this file for enhanced SEO meta tags
+ * Usage: include 'seo.php'; at the top of each page
+ */
+
+function getSeoMeta($page = 'home') {
+    $seo = [
+        'home' => [
+            'title' => 'GIESTAR | Jasa Pembuatan Website Murah & Modern di Indonesia',
+            'description' => 'GIESTAR menyediakan jasa pembuatan website profesional, responsif, dan SEO-friendly mulai dari Rp 100k. Solusi digital terbaik untuk bisnis UMKM Anda.',
+            'keywords' => 'jasa pembuatan website, jasa web design, website murah, landing page, company profile, toko online, web developer indonesia, jasa website umkm, website pemalang, jasa pembuatan website pemalang, web developer pemalang, website purbalingga, jasa pembuatan website purbalingga, web developer purbalingga', 
+            'og_type' => 'website',
+            'canonical' => 'https://giestar.yzz.me/'
+        ],
+        'about' => [
+            'title' => 'Tentang Kami | GIESTAR - Jasa Pembuatan Website Profesional',
+            'description' => 'Kenali GIESTAR lebih dekat. Kami adalah tim profesional yang berdedikasi membuat website modern, cepat, dan terjangkau untuk bisnis Anda di Indonesia.',
+            'keywords' => 'tentang giestar, web developer indonesia, jasa website terpercaya, tim pembuat website, agency digital indonesia,  website pemalang, jasa pembuatan website pemalang, web developer pemalang, website purbalingga, jasa pembuatan website purbalingga, web developer purbalingga',
+            'og_type' => 'website',
+            'canonical' => 'https://giestar.yzz.me/?page=about'
+        ],
+        'product' => [
+            'title' => 'Produk & Portfolio | GIESTAR - Contoh Hasil Pembuatan Website',
+            'description' => 'Lihat portfolio dan contoh hasil pembuatan website oleh GIESTAR. Landing page, company profile, dan toko online berkualitas tinggi dengan harga terjangkau.',
+            'keywords' => 'portfolio website, contoh website, hasil pembuatan website, landing page, company profile, e-commerce, toko online, website pemalang, jasa pembuatan website pemalang, web developer pemalang, website purbalingga, jasa pembuatan website purbalingga, web developer purbalingga',
+            'og_type' => 'website',
+            'canonical' => 'https://giestar.yzz.me/?page=product'
+        ],
+        'contact' => [
+            'title' => 'Hubungi Kami | GIESTAR - Konsultasi Gratis Pembuatan Website',
+            'description' => 'Hubungi GIESTAR untuk konsultasi gratis pembuatan website. WhatsApp: +6282314548114. Kami siap membantu bisnis Anda tampil profesional secara online.',
+            'keywords' => 'hubungi giestar, kontak web developer, konsultasi website gratis, order website, pesan website online, website pemalang, jasa pembuatan website pemalang, web developer pemalang, website purbalingga, jasa pembuatan website purbalingga, web developer purbalingga',
+            'og_type' => 'website',
+            'canonical' => 'https://giestar.yzz.me/?page=contact'
+        ]
+    ];
+    
+    return $seo[$page] ?? $seo['home'];
+}
+
+function renderSeoHead($page = 'home') {
+    $meta = getSeoMeta($page);
+    $siteName = 'GIESTAR';
+    $siteUrl = 'https://giestar.yzz.me';
+    $logoUrl = $siteUrl . '/images/logo.png';
+    
+    return <<<HTML
+    <!-- Primary Meta Tags -->
+    <title>{$meta['title']}</title>
+    <meta name="title" content="{$meta['title']}">
+    <meta name="description" content="{$meta['description']}">
+    <meta name="keywords" content="{$meta['keywords']}">
+    <meta name="author" content="GIESTAR">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Indonesian">
+    <meta name="revisit-after" content="7 days">
+    <link rel="canonical" href="{$meta['canonical']}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{$meta['og_type']}">
+    <meta property="og:url" content="{$meta['canonical']}">
+    <meta property="og:title" content="{$meta['title']}">
+    <meta property="og:description" content="{$meta['description']}">
+    <meta property="og:image" content="{$logoUrl}">
+    <meta property="og:site_name" content="{$siteName}">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{$meta['canonical']}">
+    <meta property="twitter:title" content="{$meta['title']}">
+    <meta property="twitter:description" content="{$meta['description']}">
+    <meta property="twitter:image" content="{$logoUrl}">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="ID-JT">
+    <meta name="geo.placename" content="Pemalang, Jawa Tengah">
+    <meta name="geo.position" content="-6.8885;109.3822">
+    <meta name="ICBM" content="-6.8885, 109.3822">
+HTML;
+}
+
+function renderSchemaOrg($page = 'home') {
+    $schema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'LocalBusiness',
+        'name' => 'GIESTAR',
+        'description' => 'Jasa pembuatan website profesional, responsif, dan SEO-friendly dengan harga terjangkau.',
+        'url' => 'https://giestar.yzz.me',
+        'telephone' => '+6282314548114',
+        'email' => 'giestar@gmail.com',
+        'address' => [
+            '@type' => 'PostalAddress',
+            'addressLocality' => 'Pemalang',
+            'addressRegion' => 'Jawa Tengah',
+            'addressCountry' => 'ID'
+        ],
+        'priceRange' => 'Rp 100.000 - Rp 400.000',
+        'openingHours' => 'Mo-Su 00:00-23:59',
+        'sameAs' => [
+            'https://wa.me/6282314548114'
+        ],
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Layanan Website',
+            'itemListElement' => [
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Small ',
+                        'description' => 'Website 1 halaman, responsif, SEO friendly',
+                        'price' => '100000',
+                        'priceCurrency' => 'IDR'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Medium',
+                        'description' => 'Website hingga 4 halaman, responsif, SEO friendly',
+                        'price' => '200000',
+                        'priceCurrency' => 'IDR'
+                    ]
+                ],
+                [
+                    '@type' => 'Offer',
+                    'itemOffered' => [
+                        '@type' => 'Service',
+                        'name' => 'Large',
+                        'description' => 'Website hingga 9 halaman dengan CRUD dan dashboard admin',
+                        'price' => '400000',
+                        'priceCurrency' => 'IDR'
+                    ]
+                ]
+            ]
+        ]
+    ];
+    
+    return '<script type="application/ld+json">' . json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>';
+}

@@ -1,19 +1,32 @@
+<?php include 'seo.php'; ?>
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIESTAR | Jasa Pembuatan Website Murah & Modern</title>
-    <meta name="description" content="GIESTAR menyediakan jasa pembuatan website profesional, responsif, dan SEO-friendly dengan harga terjangkau. Solusi digital terbaik untuk bisnis Anda.">
-    <meta name="keywords" content="jasa pembuatan website, jasa web design, website murah, landing page, company profile, toko online">
+    
+    <!-- SEO Meta Tags -->
+    <?= renderSeoHead('home') ?>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    
+    <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <style>
         body { font-family: 'Inter', sans-serif; }
         .gradient-hero { background: linear-gradient(135deg, #eff6ff 0%, #fefce8 100%); }
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
     </style>
+    
+    <!-- Schema.org Structured Data -->
+    <?= renderSchemaOrg('home') ?>
 </head>
 <body class="bg-white text-gray-900">
 
@@ -160,7 +173,7 @@
                 <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                     <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Simple E-Commerce</h3>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Large</h3>
                 <p class="text-gray-600 mb-6">
                     Toko online siap pakai 24/7 yang memungkinkan Anda mengelola produk, stok dan mempermakan proses jalan.
                 </p>
@@ -186,7 +199,7 @@
         
         <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover">
-                <h3 class="text-lg font-semibold text-gray-500 mb-2">Basic</h3>
+                <h3 class="text-lg font-semibold text-gray-500 mb-2">Small</h3>
                 <p class="text-sm text-gray-400 mb-4">Ideal untuk personal branding.</p>
                 <div class="mb-6">
                     <span class="text-4xl font-extrabold text-gray-900">Rp 100k</span>
@@ -214,13 +227,13 @@
                         Tidak termasuk domain & hosting
                     </li>
                 </ul>
-                <a href="https://wa.me/6282314548114?text=Halo, saya tertarik dengan Paket Basic" class="block w-full text-center bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">
+                <a href="https://wa.me/6282314548114?text=Halo, saya tertarik dengan Paket Small" class="block w-full text-center bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">
                     Pilih Paket
                 </a>
             </div>
-            <!-- Business -->
+            <!-- Medium -->
             <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover">
-                <h3 class="text-lg font-semibold text-gray-500 mb-2">Business</h3>
+                <h3 class="text-lg font-semibold text-gray-500 mb-2">Medium</h3>
                 <p class="text-sm text-gray-400 mb-4">Terbaik untuk UMKM & Bisnis.</p>
                 <div class="mb-6">
                     <span class="text-4xl font-extrabold text-gray-900">Rp 200k</span>
@@ -229,7 +242,7 @@
                 <ul class="space-y-4 mb-8">
                     <li class="flex items-center text-gray-600">
                         <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        Hingga 4 halaman
+                        4 halaman
                     </li>
                     <li class="flex items-center text-gray-600">
                         <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
@@ -248,16 +261,17 @@
                         Tidak termasuk domain & hosting
                     </li>
                 </ul>
-                <a href="https://wa.me/6282314548114?text=Halo, saya tertarik dengan Paket Basic" class="block w-full text-center bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">
+                <a href="https://wa.me/6282314548114?text=Halo, saya tertarik dengan Paket Medium" class="block w-full text-center bg-gray-100 text-gray-700 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">
                     Pilih Paket
                 </a>
             </div>
             
-            <!-- Business - Popular -->
+            <!-- Medium - Popular -->
             <div class="bg-blue-700 rounded-2xl p-8 card-hover relative shadow-2xl">
                 <!-- <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-gray-900 text-xs font-bold px-4 py-1 rounded-full uppercase">Most Popular</span> -->
-                <h3 class="text-lg font-semibold text-blue-200 mb-2">Simple E-Commerce</h3>
+                <h3 class="text-lg font-semibold text-blue-200 mb-2">Large</h3>
                 <p class="text-sm text-blue-300 mb-4">Ideal untuk UMKM & Bisnis yang dilengkapi dashboard admin.</p>
+                <span class="text-sm text-white">Mulai dari</span>
                 <div class="mb-6">
                     <span class="text-4xl font-extrabold text-white">Rp 400k</span>
                     <span class="text-blue-200">/proyek</span>
@@ -265,7 +279,7 @@
                 <ul class="space-y-4 mb-8">
                     <li class="flex items-center text-blue-100">
                         <svg class="w-5 h-5 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        Hingga 9 Halaman
+                        9 Halaman
                     </li>
                     <li class="flex items-center text-blue-100">
                         <svg class="w-5 h-5 text-yellow-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
@@ -288,7 +302,7 @@
                         Tidak termasuk domain & hosting
                     </li>
                 </ul>
-                <a href="https://wa.me/6282314548114?text=Halo, saya tertarik dengan Paket Business" class="block w-full text-center bg-yellow-400 text-gray-900 py-3 rounded-xl font-bold hover:bg-yellow-500 transition shadow-lg">
+                <a href="https://wa.me/6282314548114?text=Halo, saya tertarik dengan Paket Large" class="block w-full text-center bg-yellow-400 text-gray-900 py-3 rounded-xl font-bold hover:bg-yellow-500 transition shadow-lg">
                     Pilih Paket
                 </a>
             </div>
@@ -306,7 +320,7 @@
         <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
             Konsultasikan kebutuhan website Anda secara gratis. Tim GIESTAR siap membantu 24/7.
         </p>
-        <a href="https://wa.me/6282314548114" target="_blank" class="inline-flex items-center bg-yellow-400 text-gray-900 px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-500 transition shadow-xl hover:shadow-2xl">
+        <a href="https://wa.me/6282314548114" target="_blank" class="inline-flex items-center bg-yellow-400 text-gray-900 px-10 py-4 rounded-full font-bold text-md  lg:text-lg hover:bg-yellow-500 transition shadow-xl hover:shadow-2xl">
             <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
             Chat via WhatsApp Sekarang
         </a>

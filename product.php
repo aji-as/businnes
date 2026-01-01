@@ -1,12 +1,22 @@
+<?php include 'seo.php'; ?>
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produk | GIESTAR - Contoh Hasil Pembuatan Website</title>
-    <meta name="description" content="Lihat portfolio dan contoh hasil pembuatan website oleh GIESTAR. Landing page, company profile, dan toko online berkualitas tinggi.">
+    
+    <!-- SEO Meta Tags -->
+    <?= renderSeoHead('product') ?>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Stylesheets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <style>
         body { font-family: 'Inter', sans-serif; }
         .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -31,6 +41,7 @@
         }
         .gradient-text {
             background: linear-gradient(135deg, #1d4ed8 0%, #7c3aed 100%);
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
