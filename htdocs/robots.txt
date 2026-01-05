@@ -1,11 +1,11 @@
 # Robots.txt for GIESTAR Website
-# https://giestar.com
+# https://giestar.yzz.me
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://giestar.com/sitemap.xml
+Sitemap: https://giestar.yzz.me/sitemap.xml
 
 # Disallow admin or private areas (if any)
 Disallow: /admin/

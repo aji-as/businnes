@@ -9,9 +9,15 @@
     <?= renderSeoHead('about') ?>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
     <!-- Stylesheets -->
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,28 +39,28 @@
         <div class="text-center">
             <h1 class="mt-3 text-4xl md:text-5xl font-bold text-gray-900">Tentang Kami</h1>
             <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-                Mengenal lebih dekat tim di balik GIESTAR Digital Agency
+                Mengenal lebih dekat tim di balik Giestar Digital Agency
             </p>
         </div>
     </div>
 </section>
 
-<!-- About GIESTAR -->
+<!-- About Giestar -->
 <section class="py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div>
                 <h2 class="mt-3 text-3xl md:text-4xl font-bold text-gray-900">Tentang kami</h2>
                 <p class="mt-6 text-gray-600 leading-relaxed">
-                    GIESTAR adalah agensi digital yang berdedikasi membantu UMKM dan bisnis lokal tampil profesional di era digital. Kami percaya bahwa setiap bisnis, sekecil apapun, layak memiliki website berkualitas tinggi dengan harga yang terjangkau.
+                Giestar merupakan jasa pembuatan yang berlokasi di Pemalang, Jawa Tengah. Giestar berfokus membantu UMKM dan bisnis lokal agar tampil profesional di era digital. Kami percaya setiap bisnis, sekecil apa pun, berhak memiliki website yang representatif, fungsional, dan membantu bisnis Anda menjangkau pasar yang lebih luas.
                 </p>
                 <p class="mt-4 text-gray-600 leading-relaxed">
-                    Dengan tim yang berpengalaman dalam web development, kami menghadirkan solusi website yang tidak hanya indah secara visual, tetapi juga optimal dari segi performa dan SEO.
+                Selain itu, Giestar menghadirkan website yang tidak hanya menarik secara visual tetapi juga cepat, responsif, dan dioptimalkan untuk SEO. Solusi kami dirancang untuk mendukung pertumbuhan bisnis Anda secara berkelanjutan.
                 </p>
             </div>
             <div class="relative">
                 <div class="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
-                    <div class="text-6xl font-bold mb-4">GIESTAR<span class="text-yellow-400">.</span></div>
+                    <div class="text-6xl font-bold mb-4">Giestar<span class="text-yellow-400">.</span></div>
                     <p class="text-blue-100 text-lg">Digital Agency</p>
                     <div class="mt-8 grid grid-cols-2 gap-4">
                         <div class="bg-white/10 rounded-xl p-4 text-center">
@@ -62,7 +68,7 @@
                             <div class="text-sm text-blue-200">Est.</div>
                         </div>
                         <div class="bg-white/10 rounded-xl p-4 text-center">
-                            <div class="text-3xl font-bold">24/7</div>
+                            <div class="text-3xl font-bold">24 Jam</div>
                             <div class="text-sm text-blue-200">Konsultasi Gratis</div>
                         </div>
                     </div>
@@ -76,27 +82,26 @@
 <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <span class="text-blue-600 font-semibold text-sm uppercase tracking-wider">Keunggulan</span>
-            <h2 class="mt-3 text-3xl md:text-4xl font-bold text-gray-900">Mengapa Memilih GIESTAR?</h2>
+            <h2 class="mt-3 text-3xl md:text-4xl font-bold text-gray-900">Mengapa Memilih Giestar?</h2>
         </div>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Reliability -->
-            <div class="bg-white rounded-2xl p-6 text-center card-hover shadow-sm">
+            <!-- <div class="bg-white rounded-2xl p-6 text-center card-hover shadow-sm">
                 <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
                     <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                 </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Reliability</h3>
-                <p class="text-gray-600 text-sm">GIESTAR tim terpercaya dan berdedikasi yang akan membantu membangun website profesional Anda.</p>
-            </div>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Terpercaya</h3>
+                <p class="text-gray-600 text-sm">Membantu membangun website anda secara profesional.</p>
+            </div> -->
             
             <!-- Tech Stack -->
             <div class="bg-white rounded-2xl p-6 text-center card-hover shadow-sm">
                 <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
                     <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
                 </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">Tech Stack</h3>
-                <p class="text-gray-600 text-sm">GIESTAR memanfaatkan teknologi modern dan terkini untuk memberikan hasil terbaik.</p>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">Teknologi Modern</h3>
+                <p class="text-gray-600 text-sm">Giestar memanfaatkan teknologi modern dan terkini untuk memberikan hasil terbaik.</p>
             </div>
             
             <!-- User Usability -->
@@ -104,8 +109,8 @@
                 <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
                     <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/></svg>
                 </div>
-                <h3 class="font-bold text-lg text-gray-900 mb-2">User Usability</h3>
-                <p class="text-gray-600 text-sm">GIESTAR memastikan setiap produk user-friendly dan mudah diakses oleh semua pengguna.</p>
+                <h3 class="font-bold text-lg text-gray-900 mb-2">User-Friendly</h3>
+                <p class="text-gray-600 text-sm">Giestar memastikan setiap produk user-friendly dan mudah diakses oleh semua pengguna.</p>
             </div>
             
             <!-- Support -->
@@ -114,7 +119,7 @@
                     <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                 </div>
                 <h3 class="font-bold text-lg text-gray-900 mb-2">Full Support</h3>
-                <p class="text-gray-600 text-sm">Tim support GIESTAR siap membantu Anda kapanpun dibutuhkan, sebelum dan sesudah proyek selesai.</p>
+                <p class="text-gray-600 text-sm"> Giestar siap membantu Anda kapanpun dibutuhkan, sebelum dan sesudah proyek selesai.</p>
             </div>
         </div>
     </div>
@@ -135,7 +140,7 @@
                         <p class="text-yellow-800 mt-2 text-sm">Trust bisnis dengan website profesional</p>
                     </div>
                     <div class="bg-gray-100 rounded-2xl p-6 col-span-2">
-                        <div class="text-4xl font-bold text-gray-900">24/7</div>
+                        <div class="text-4xl font-bold text-gray-900">24 Jam</div>
                         <p class="text-gray-600 mt-2 text-sm">Website bekerja untuk bisnis Anda tanpa henti</p>
                     </div>
                 </div>
@@ -153,7 +158,7 @@
                     </li>
                     <li class="flex items-start">
                         <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                        <span class="text-gray-600">Memperluas jangkauan pasar tanpa batas geografis</span>
+                        <span class="text-gray-600">Memperluas jangkauan pasar </span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>

@@ -3,12 +3,19 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
             <!-- Logo -->
-            <a href="?page=home" class="text-2xl font-bold text-blue-800">GIESTAR<span class="text-yellow-400">.</span></a>
+            <a href="?page=home" class="flex items-center">
+                <img 
+                    src="images/logo.png" 
+                    alt="Giestar" 
+                    class="h-10 md:h-12 lg:h-14 w-auto"
+                >
+            </a>
+
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center space-x-8">
                 <a href="?page=home" class="text-gray-700 hover:text-blue-700 font-medium transition <?= ($page ?? 'home') === 'home' ? 'text-blue-700' : '' ?>">Beranda</a>
-                <a href="?page=about" class="text-gray-700 hover:text-blue-700 font-medium transition <?= ($page ?? '') === 'about' ? 'text-blue-700' : '' ?>">Tentang</a>
+                <a href="?page=about" class="text-gray-700 hover:text-blue-700 font-medium transition <?= ($page ?? '') === 'about' ? 'text-blue-700' : '' ?>">Tentang Kami</a>
                 <a href="?page=product" class="text-gray-700 hover:text-blue-700 font-medium transition <?= ($page ?? '') === 'product' ? 'text-blue-700' : '' ?>">Produk</a>
                 <a href="?page=contact" class="text-gray-700 hover:text-blue-700 font-medium transition <?= ($page ?? '') === 'contact' ? 'text-blue-700' : '' ?>">Kontak</a>
             </div>
@@ -32,7 +39,7 @@
         <div id="mobile-menu" class="hidden md:hidden pb-4">
             <div class="flex flex-col space-y-3 pt-4 border-t border-gray-100">
                 <a href="?page=home" class="text-gray-700 hover:text-blue-700 font-medium px-2 py-2 rounded-lg hover:bg-gray-50 transition">Beranda</a>
-                <a href="?page=about" class="text-gray-700 hover:text-blue-700 font-medium px-2 py-2 rounded-lg hover:bg-gray-50 transition">Tentang</a>
+                <a href="?page=about" class="text-gray-700 hover:text-blue-700 font-medium px-2 py-2 rounded-lg hover:bg-gray-50 transition">Tentang Kami</a>
                 <a href="?page=product" class="text-gray-700 hover:text-blue-700 font-medium px-2 py-2 rounded-lg hover:bg-gray-50 transition">Produk</a>
                 <a href="?page=contact" class="text-gray-700 hover:text-blue-700 font-medium px-2 py-2 rounded-lg hover:bg-gray-50 transition">Kontak</a>
                 <a href="?page=contact" class="bg-yellow-400 text-gray-900 px-6 py-2.5 rounded-full font-semibold text-center hover:bg-yellow-500 transition mt-2">
